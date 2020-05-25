@@ -20,7 +20,7 @@ function createMainWindow() {
 		width: isDev ? 800 : 500,
 		height: 600,
 		title: 'ImageShrink',
-		icon: './assets/icons/Icon_256x256.png',
+		icon: path.join(__dirname, `assets/icons/Icon_256x256.png`),
 		resizable: isDev ? true : false,
 		webPreferences: {
 			nodeIntegration: true,
@@ -37,7 +37,7 @@ function creatAboutWindow() {
 		width: 300,
 		height: 300,
 		title: 'ImageShrink',
-		icon: './assets/icons/Icon_256x256.png',
+		icon: path.join(__dirname, `assets/icons/Icon_256x256.png`),
 		resizable: isDev ? true : false,
 	});
 
